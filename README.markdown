@@ -1,5 +1,7 @@
 # Spinor
 
+回る・周る・巡る・廻る
+
 ## Usage
 
 ## Installation
