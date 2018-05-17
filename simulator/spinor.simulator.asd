@@ -10,7 +10,10 @@
   :components ((:module "src"
                 :components
                 ((:file "package")
-                 (:file "class"))))
+                 (:file "matrix")
+                 (:file "rotate")
+                 (:module "class" :components ((:file "gate")
+                                               (:file "qubit"))))))
   :description ""
   :long-description
   #.(read-file-string

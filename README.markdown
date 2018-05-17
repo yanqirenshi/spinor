@@ -2,6 +2,16 @@
 
 回る・周る・巡る・廻る
 
+- atom
+- eq
+- car
+- cdr
+- cons
+- cond
+- quote
+- lambda
+- define
+
 ## Usage
 
 ## Installation
