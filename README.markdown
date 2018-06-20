@@ -1,22 +1,20 @@
 # Spinor
 
-回る・周る・巡る・廻る
+純Lispのコンパイラを作りたいと。
+
+## これだけ。
 
 | Type     | Elements       |
 |----------|----------------|
 | 関数     | atom           |
-|          | eq             |
-|          | car            |
-|          | cdr            |
-|          | cons           |
+| 〃       | eq             |
+| 〃       | car            |
+| 〃       | cdr            |
+| 〃       | cons           |
 | 特殊形式 | cond           |
-|          | quote          |
+| 〃       | quote          |
 | 関数定義 | lambda         |
-|          | label (define) |
-
-## Usage
-
-## Installation
+| 〃       | label (define) |
 
 ## Author
 
