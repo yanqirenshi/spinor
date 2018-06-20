@@ -30,7 +30,6 @@
                    (0.0 ,cos  ,sin)
                    (0.0 ,-sin ,cos)))))
 
-
 (defun make-matrix-rotate-y (rad)
   (let* ((cos (cos rad))
          (sin (sin rad))
