@@ -161,13 +161,7 @@ riot.tag2('page05', '', '', '', function(opts) {
      this.on('update', () => { this.draw(); });
 });
 
-riot.tag2('page01-sec_root', '<section-header title="Home"></section-header> <section-container title="セクション" data="{sections()}"> <sections-list data="{opts.data}"> </sections-list> </section-container>', '', '', function(opts) {
-     this.sections = () => {
-         let pages = STORE.state().get('site').pages;
-         let page = pages.find((d) => { return d.code=='page01'; });
-
-         return page.sections;
-     }
+riot.tag2('page01-sec_root', '<section-header title="Home"></section-header> <section-container title="概要"> <sections-contents> <p>Lisp のコンパイラを作成しようと考えて始まったプロジェクトです。</p> <p>このプロジェクトでは Pure Lisp のコンパイラを実装します。</p> <p>その上に Tiwster というプロジェクトで Common Lisp のコンパイラを実装したいと妄想しています。</p> <p>今は量子コンピューター(ゲート型)を学んでいるのでそこも生かせればと妄想しています。</p> <sections-contents> <p>妄想構成図</p> <p> <pre>\n+------------------------------------------+\n| Twister                                  |\n+------------------------------------------+\n+-------------+ +-----+ +----------+ +-----+\n| Spinor      | |     | | Math lib | |     |\n+-------------+ |     | +----------+ |     |\n+-----+ +-------+     +------+ +-----+     |\n| cpu | |         qpu        | |       gpu |\n+-----+ +--------------------+ +-----------+\n                    </pre> </P> </sections-contents> </sections-contents> </section-container>', '', '', function(opts) {
 });
 
 riot.tag2('page02-sec_root', '<section-header title="量子コンユーター(ゲート型)"></section-header>', '', '', function(opts) {
