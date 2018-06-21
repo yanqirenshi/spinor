@@ -2,20 +2,6 @@
 
 純Lispのコンパイラを作りたいと。
 
-## これだけ。
-
-| Type     | Elements       |
-|----------|----------------|
-| 関数     | atom           |
-| 〃       | eq             |
-| 〃       | car            |
-| 〃       | cdr            |
-| 〃       | cons           |
-| 特殊形式 | cond           |
-| 〃       | quote          |
-| 関数定義 | lambda         |
-| 〃       | label (define) |
-
 ## Author
 
 + Satoshi Iwasaki (yanqirenshi@gmail.com)

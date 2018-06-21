@@ -147,6 +147,20 @@ riot.tag2('page03', '', '', '', function(opts) {
      this.on('update', () => { this.draw(); });
 });
 
+riot.tag2('page04', '', '', '', function(opts) {
+     this.mixin(MIXINS.page);
+
+     this.on('mount', () => { this.draw(); });
+     this.on('update', () => { this.draw(); });
+});
+
+riot.tag2('page05', '', '', '', function(opts) {
+     this.mixin(MIXINS.page);
+
+     this.on('mount', () => { this.draw(); });
+     this.on('update', () => { this.draw(); });
+});
+
 riot.tag2('page01-sec_root', '<section-header title="Home"></section-header> <section-container title="セクション" data="{sections()}"> <sections-list data="{opts.data}"> </sections-list> </section-container>', '', '', function(opts) {
      this.sections = () => {
          let pages = STORE.state().get('site').pages;
@@ -156,8 +170,14 @@ riot.tag2('page01-sec_root', '<section-header title="Home"></section-header> <se
      }
 });
 
-riot.tag2('page02-sec_root', '<section-header title="量子コンユーター(ゲート型) シュミレーター"></section-header>', '', '', function(opts) {
+riot.tag2('page02-sec_root', '<section-header title="量子コンユーター(ゲート型)"></section-header>', '', '', function(opts) {
 });
 
 riot.tag2('page03-sec_root', '<section-header title="Blog"></section-header> <blog_2018-06-21></blog_2018-06-21>', '', '', function(opts) {
+});
+
+riot.tag2('page04-sec_root', '<section-header title="Pure Lisp"></section-header> <section-container title="Operators"> <section-contents> <p> <pre>\n | Type     | Elements       |\n |----------|----------------|\n | 関数     | atom           |\n | 〃       | eq             |\n | 〃       | car            |\n | 〃       | cdr            |\n | 〃       | cons           |\n | 特殊形式 | cond           |\n | 〃       | quote          |\n | 関数定義 | lambda         |\n | 〃       | label (define) |\n                </pre> </p> </section-contents> </section-container>', '', '', function(opts) {
+});
+
+riot.tag2('page05-sec_root', '<section-header title="コンパイラ"></section-header> <section-container title="概要"> <section-contents> <p> </p> </section-contents> </section-container>', '', '', function(opts) {
 });
