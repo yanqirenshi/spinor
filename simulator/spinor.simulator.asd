@@ -9,11 +9,12 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "package")
-                 (:file "matrix")
+                ((:file "matrix")
                  (:file "rotate")
+                 (:file "package")
                  (:module "class" :components ((:file "gate")
-                                               (:file "qubit"))))))
+                                               (:file "qubit")))
+                 (:file "simulator"))))
   :description ""
   :long-description
   #.(read-file-string

@@ -8,7 +8,13 @@
 
 ```lisp
 (in-package :spinor.simulator)
-;; なんか書かんと。
+
+;; 観測(observe)
+(let ((qubit (make-instance 'qubit))
+      (deg 180))
+  (setf (matrix qubit) (rotate-y (matrix qubit) :deg deg))
+  (o (make-instance 'gate-observe)
+     qubit))
 ```
 
 ## Installation

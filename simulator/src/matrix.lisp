@@ -17,10 +17,10 @@
                     :ctype :float))
 
 (defun make-matrix-0> ()
-  (make-matrix '(0.0 0.0 1.0)))
+  (make-matrix '((0.0 0.0 1.0))))
 
 (defun make-matrix-1> ()
-  (make-matrix '(0.0 0.0 -1.0)))
+  (make-matrix '((0.0 0.0 -1.0))))
 
 (defun make-matrix-rotate-x (rad)
   (let* ((cos (cos rad))

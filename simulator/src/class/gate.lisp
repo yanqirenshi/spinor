@@ -24,3 +24,5 @@
 (defgeneric unitary-transformation (gate &rest qubits)
   (:method ((gate single-qubit-qugate) &rest qubits)
     (list gate (first qubits))))
+
+(defclass gate-observe (single-qubit-qugate) ())
