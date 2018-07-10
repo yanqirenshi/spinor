@@ -5,3 +5,5 @@
 
 (defclass qubit (bloch-sphere)
   ((error-rate :accessor error-rate :initarg :error-rate :initform 0.0)))
+
+(defclass photon () ())
